@@ -1,0 +1,41 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Приветствую Вас, {{g.user.nickname}}!</h1>
+{% include 'flash.html' %}
+<div class="well">
+    <form class="form-horizontal" action="" method="post" name="post">
+        {{form.hidden_tag()}}
+        <div class="control-group{% if form.errors.post %} error{% endif %}">
+            <label class="control-label" for="post">Скажи что-нибудь, дорогой друг:</label>
+            <div class="controls">
+                {{ form.post(size = 30, maxlength = 140) }}
+                {% for error in form.errors.post %}
+                    <span class="help-inline">[{{error}}]</span><br>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <input class="btn btn-inverse" type="submit" value="Молвить!">
+            </div>
+        </div>
+    </form>
+</div>
+    {% for post in posts.items %}
+        {% include 'post.html' %}
+    {% endfor %}
+<ul class="pager">
+    {% if posts.has_prev %}
+    <li class="previous"><a href="{{ url_for('index', page=posts.prev_num) }}" style="color:black">&larr; Последние записи</a></li>
+    {% else %}
+    <li class="previous disabled"><a href="#">&larr; Последние записи</a></li>
+    {% endif %}
+    {% if posts.has_next %}
+    <li class="next"><a href="{{ url_for('index', page=posts.next_num) }}" style="color:black">Ранние записи &rarr;</a></li>
+    {% else %}
+    <li class="next disabled"><a href="#">Ранние записи &rarr;</a></li>
+    {% endif %}
+</ul>
+{% endblock %}

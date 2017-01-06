@@ -1,0 +1,1205 @@
+2016-12-24 22:01:30,131 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-24 22:02:23,566 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 18:22:12,129 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 18:27:04,455 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 18:40:55,736 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 18:41:10,312 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 18:55:22,404 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 18:55:29,996 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 19:03:26,492 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 39, in index
+    },
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 3, in block "content"
+    <h1>Hi, {{user.nickname}}!</h1>
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2016-12-25 19:03:34,583 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 39, in index
+    },
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 3, in block "content"
+    <h1>Hi, {{user.nickname}}!</h1>
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2016-12-25 19:03:39,837 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 39, in index
+    },
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 3, in block "content"
+    <h1>Hi, {{user.nickname}}!</h1>
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2016-12-25 19:03:52,314 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 19:03:58,794 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 19:04:02,543 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 48, in index
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 3, in block "content"
+    <h1>Hi, {{user.nickname}}!</h1>
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2016-12-25 19:04:21,677 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 48, in index
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 3, in block "content"
+    <h1>Hi, {{user.nickname}}!</h1>
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2016-12-25 19:20:49,046 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 19:21:05,486 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:21:13,383 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:22:57,468 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    return redirect(url_for('index'))
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:23:05,229 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    return redirect(url_for('index'))
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:23:12,117 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    return redirect(url_for('index'))
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:23:29,693 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    return redirect(url_for('index'))
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:24:20,273 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    user = User.query.filter_by(nickname = nickname).first()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:25:14,019 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    return redirect(url_for('index'))
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:27:59,307 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    user = user,
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:28:02,092 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 41, in index
+    
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:28:05,459 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 99, in user
+    user = user,
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:28:07,597 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 41, in index
+    
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:28:29,039 ERROR: Exception on / [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 41, in index
+    
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:28:32,476 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 41, in index
+    
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:33:01,996 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 19:33:09,634 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 19:33:21,741 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:33:26,669 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:35:08,137 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:35:11,094 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:35:17,822 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:35:37,269 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:35:48,816 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:38:30,410 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    if user is None:
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:38:37,563 ERROR: Exception on /user/Кирилл [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 103, in user
+    if user is None:
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/useur/microblog/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2016-12-25 19:40:23,568 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 19:40:28,476 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:11:03,509 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:11:07,434 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:22:21,837 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:22:26,604 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:23:22,094 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:23:55,219 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:23:57,547 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:28:29,608 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:29:01,975 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:29:04,774 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:33:33,900 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:33:36,030 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:35:41,509 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:40:51,223 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:40:53,017 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:41:19,329 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:41:33,781 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:41:36,370 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:42:09,048 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:45:26,086 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:46:22,328 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:46:36,572 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:46:39,377 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:50:31,688 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:50:39,633 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:50:41,137 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:51:44,191 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:53:00,305 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:54:26,063 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:54:34,656 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:55:24,730 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:56:32,140 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:56:35,171 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:56:51,234 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:56:54,616 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:57:52,526 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:58:07,662 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:58:39,498 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:58:50,775 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:58:55,827 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 22:58:59,338 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 46, in index
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 22, in top-level template code
+    <li>{{ message }} </li>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+2016-12-25 22:59:05,304 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 46, in index
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 22, in top-level template code
+    <li>{{ message }} </li>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+2016-12-25 22:59:06,617 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 46, in index
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 22, in top-level template code
+    <li>{{ message }} </li>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+2016-12-25 22:59:15,101 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 46, in index
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 22, in top-level template code
+    <li>{{ message }} </li>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+2016-12-25 22:59:53,900 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:00:02,589 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 46, in index
+    posts = posts)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 22, in top-level template code
+    <li>{{ message }} </li>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+2016-12-25 23:04:26,338 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 46, in index
+    return render_template('index.html',
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 22, in top-level template code
+    <li>{{ message }} </li>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+2016-12-25 23:04:45,025 ERROR: Exception on /index [GET] [in /home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py:1306]
+Traceback (most recent call last):
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/useur/microblog/app/views.py", line 46, in index
+    return render_template('index.html',
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/useur/microblog/flask/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/useur/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/useur/microblog/app/templates/base.html", line 22, in top-level template code
+    <li>{{ message }} </li>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xd0 in position 0: ordinal not in range(128)
+2016-12-25 23:05:47,732 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:05:51,609 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:07:35,421 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:07:38,208 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:08:48,443 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:09:04,072 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:09:07,090 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:09:26,176 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:09:54,538 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:10:25,980 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:13:00,340 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:13:53,264 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:14:06,648 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:14:41,945 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:14:44,670 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:15:27,601 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-25 23:15:36,216 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:11:49,909 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:11:53,655 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:12:40,975 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:12:42,781 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:13:27,580 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:13:31,017 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:13:32,660 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:14:41,019 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:14:56,651 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:15:02,371 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:15:04,849 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:16:21,313 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:19:14,024 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:20:25,859 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:26:22,604 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:27:54,962 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:31:07,248 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:31:08,199 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:31:29,696 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:31:53,157 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:32:09,476 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:32:35,929 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:32:57,819 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:35:29,675 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:37:46,500 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 18:37:48,704 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:23:47,489 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:24:07,142 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:24:37,225 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:25:21,917 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:36:36,600 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:39:30,869 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:42:12,379 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:42:50,832 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:43:30,716 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 19:43:57,367 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 20:14:34,218 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-26 20:16:34,361 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-28 00:08:50,221 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-28 00:12:05,785 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-28 00:31:24,447 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-28 00:31:29,668 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:21:52,198 INFO: microblog startup [in app/__init__.py:38]
+2016-12-29 18:35:25,149 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:35:32,029 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:36:14,554 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:36:53,863 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:39:10,578 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:41:29,237 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:45:51,534 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:45:56,528 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:47:01,606 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:48:41,395 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:51:36,159 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:52:31,574 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:57:04,587 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 18:57:11,223 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 20:58:17,231 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 20:58:20,259 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:01:37,646 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:11:30,882 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:42]
+2016-12-29 21:11:32,884 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:42]
+2016-12-29 21:12:01,583 INFO: microblog startup [in app/__init__.py:42]
+2016-12-29 21:25:22,675 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:42]
+2016-12-29 21:25:24,263 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:42]
+2016-12-29 21:31:54,307 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:32:14,871 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:32:16,837 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:38:05,761 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:38:26,014 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:38:30,239 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:40:22,237 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:41:13,179 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:42:52,059 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 21:54:35,621 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:00:19,934 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:03:54,090 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:04:00,688 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:04:29,881 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:05:34,936 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:05:39,005 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:15:47,813 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:16:36,732 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:17:57,359 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-29 22:18:00,234 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-31 00:04:52,820 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2016-12-31 00:04:59,245 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2017-01-03 22:48:09,236 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2017-01-03 22:48:14,507 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2017-01-03 22:55:40,190 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2017-01-05 15:11:12,513 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:12:39,892 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:12:44,580 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:13:39,400 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:17:30,243 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:34:04,280 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:34:06,187 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:35:47,130 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:35:58,222 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:36:09,327 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:36:44,632 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:37:16,727 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:39:59,709 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:40:33,848 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:41:12,426 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:42:15,124 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:43:48,187 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:43:50,706 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:44:18,739 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:44:49,220 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:44]
+2017-01-05 15:46:01,550 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:46:03,972 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:46:47,762 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2017-01-05 15:48:36,419 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:39]
+2017-01-05 15:50:54,370 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:38]
+2017-01-05 15:51:21,456 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:37]
+2017-01-05 15:53:01,276 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:37]
+2017-01-05 16:03:25,956 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:37]
+2017-01-05 16:28:22,291 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:37]
+2017-01-05 16:44:15,897 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:37]
+2017-01-05 16:44:19,354 INFO: microblog startup [in /home/useur/microblog/app/__init__.py:37]

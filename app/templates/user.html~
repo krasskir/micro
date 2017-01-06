@@ -1,0 +1,38 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+{% include 'flash.html' %}
+<div class="well well-large" style="height: 140px;">
+    <div class="pull-right">
+        <img src="{{user.avatar(128)}}" class="img-polaroid">
+    </div>
+    <h1>{{user.nickname}}</h1>
+    {% if user.about_me %}<p>{{user.about_me}}</p>{% endif %}
+    {% if user.last_seen %}<p><em>Последний визит: {{user.last_seen}}</em></p>{% endif %}
+    <p>Подписчики: {{user.followers.count() - 1}} | Подписки: {{user.followed.count() - 1}} |
+    {% if user.id == g.user.id %}
+        <a href="{{url_for('edit')}}" style="color:black"><ins><i>Изменить профиль</i></ins></a>
+    {% elif not g.user.is_following(user) %}
+        <a href="{{url_for('follow', nickname = user.nickname)}}" style="color:black"><ins><i>Следить</i></ins></a>
+    {% else %}
+        <a href="{{url_for('unfollow', nickname = user.nickname)}}" style="color:black"><ins><i>Перестать следить</i></ins></a>
+    {% endif %}
+    </p>
+</div>
+{% for post in posts.items %}
+    {% include 'post.html' %}
+{% endfor %}
+<ul class="pager">
+    {% if posts.has_prev %}
+    <li class="previous"><a href="{{ url_for('user', nickname = user.nickname, page = posts.prev_num) }}">&larr; Последние записи</a></li>
+    {% else %}
+    <li class="previous disabled"><a href="#">&larr; Последние записи</a></li>
+    {% endif %}
+    {% if posts.has_next %}
+    <li class="next"><a href="{{ url_for('user', nickname = user.nickname, page = posts.next_num) }}">Ранние записи &rarr;</a></li>
+    {% else %}
+    <li class="next disabled"><a href="#">Ранние записи &rarr;</a></li>
+    {% endif %}
+</ul>
+{% endblock %}

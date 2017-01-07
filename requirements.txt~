@@ -11,6 +11,7 @@ Flask-SQLAlchemy==2.1
 Flask-WhooshAlchemy==0.56
 Flask-WTF==0.8.4
 flup==1.0.2
+git+git://github.com/miguelgrinberg/Flask-WhooshAlchemy
 gunicorn==19.6.0
 itsdangerous==0.24
 Jinja2==2.8.1

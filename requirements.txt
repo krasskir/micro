@@ -14,6 +14,7 @@ flup==1.0.2
 git+git://github.com/miguelgrinberg/Flask-WhooshAlchemy
 gunicorn==19.6.0
 itsdangerous==0.24
+psycopg2==2.5
 Jinja2==2.8.1
 MarkupSafe==0.23
 pbr==1.10.0

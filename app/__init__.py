@@ -6,6 +6,7 @@ from flask.ext.openid import OpenID
 from flask.ext.mail import Mail
 from flask.ext.babel import Babel, lazy_gettext
 from config import basedir, ADMINS, MAIL_SERVER, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD
+from momentjs import momentjs
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -42,5 +43,7 @@ if os.environ.get('HEROKU') is not None:
     app.logger.addHandler(stream_handler)
     app.logger.setLevel(logging.INFO)
     app.logger.info('microblog startup')
+
+app.jinja_env.globals['momentjs'] = momentjs
 
 from app import views, models

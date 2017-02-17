@@ -9,7 +9,9 @@
     </div>
     <h1>{{user.nickname}}</h1>
     {% if user.about_me %}<p>{{user.about_me}}</p>{% endif %}
-    {% if user.last_seen %}<p><em>Последний визит: {{user.last_seen}}</em></p>{% endif %}
+    {% if user.last_seen %}
+<p><em>Последний визит: {{momentjs(user.last_seen).calendar()}}</em></p>
+{% endif %}
     <p>Подписчики: {{user.followers.count() - 1}} | Подписки: {{user.followed.count() - 1}} |
     {% if user.id == g.user.id %}
         <a href="{{url_for('edit')}}" style="color:black"><ins><i>Изменить профиль</i></ins></a>
@@ -25,12 +27,12 @@
 {% endfor %}
 <ul class="pager">
     {% if posts.has_prev %}
-    <li class="previous"><a href="{{ url_for('user', nickname = user.nickname, page = posts.prev_num) }}">&larr; Последние записи</a></li>
+    <li class="previous"><a href="{{ url_for('user', nickname = user.nickname, page = posts.prev_num) }}" style="color:black">&larr; Последние записи</a></li>
     {% else %}
     <li class="previous disabled"><a href="#">&larr; Последние записи</a></li>
     {% endif %}
     {% if posts.has_next %}
-    <li class="next"><a href="{{ url_for('user', nickname = user.nickname, page = posts.next_num) }}">Ранние записи &rarr;</a></li>
+    <li class="next"><a href="{{ url_for('user', nickname = user.nickname, page = posts.next_num) }}" style="color:black">Ранние записи &rarr;</a></li>
     {% else %}
     <li class="next disabled"><a href="#">Ранние записи &rarr;</a></li>
     {% endif %}

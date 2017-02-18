@@ -2,9 +2,9 @@
 <html>
   <head>
     {% if title %}
-    <title>{{title}} - microblog</title>
+    <title>{{title}} - Micro-Yar</title>
     {% else %}
-    <title>microblog</title>
+    <title>Micro-Yar</title>
     {% endif %}
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Microblog</a>
+          <a class="brand" href="/">Micro-Yar</a>
             <ul class="nav">
               <li><a href="{{ url_for('index') }}">Главная</a></li>
               {% if g.user.is_authenticated %}

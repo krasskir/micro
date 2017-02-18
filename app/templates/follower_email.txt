@@ -1,9 +1,9 @@
-Dear {{user.nickname}},
+Дорогой друг {{user.nickname}},
 
-{{follower.nickname}} is now a follower. Click on the following link to visit {{follower.nickname}}'s profile page:
+{{follower.nickname}} теперь подписан на Вас. Перейдите по ссылке ниже, чтобы посмотреть его профиль:
 
 {{url_for('user', nickname = follower.nickname, _external = True)}}
 
-Regards,
+С наилучшими пожеланиями,
 
-The microblog admin
+Администрация Micro-Yar

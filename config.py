@@ -28,7 +28,7 @@ MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
 MAIL_USERNAME = 'microblog.yar@gmail.com'
-MAIL_PASSWORD = 'KK37758927kk'
+MAIL_PASSWORD = 'Kir37758927Krass'
 
 # administrator list
 ADMINS = ['microblog.yar@gmail.com']

@@ -23,7 +23,7 @@ WHOOSH_ENABLED = os.environ.get('HEROKU') is None
 # slow database query threshold (in seconds)
 DATABASE_QUERY_TIMEOUT = 0.5
 # mail server settings
-MAIL_SERVER = 'smtp.gmail.com'
+MAIL_SERVER = 'smtp.googlemail.com'
 MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
